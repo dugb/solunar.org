@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solunar API</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-1180969992821055",
+      enable_page_level_ads: true
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <h2><a href="#">Solunar API</a></h2>
+    <nav>
+      <li><a href="#usage">Usage</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a target="_blank" href="https://dugb.net">Contact</a></li>
+
+    </nav>
+
+  </header>
+
+  <section class="hero">
+    <div class="background-image" style="background-image: url(assets/img/fishing-1500x1000.jpg);"></div>
+    <div class="hero-content-area">
+      <h1>Solunar API</h1>
+      <h3>Get Solunar Tables For Your App Or On Your Website</h3>
+      <a href="#usage" class="btn">Get Started</a>
+    </div>
+  </section>
+
+  <section id = "usage" class="usage-documentation">
+    <h3 class="title">Usage Documentation:</h3>
+    <p>A GET request is sent and the results are returned in JSON format.</p>
+    <hr>
+
+    <p>Endpoint: https://api.solunar.org/solunar/latitude,longitude,date,tz</p>
+
+
+<p>Parameters need to be comma separated values.<br>
+
+Latitude needs to be in decimal degree format with North positive, South negative.<br>
+Longitude needs to be in decimal degree format with East positive, West negative.<br>
+Date needs to be yyyymmdd format.<br>
+tz - timezone for results, needs to be an integer<br>
+</p>
+
+<p>
+example usage for a location in Michigan, USA:
+
+<a target="_blank" href="https://api.solunar.org/solunar/42.66,-84.07,20180225,-4">https://api.solunar.org/solunar/42.66,-84.07,20180207,-4</a></p>
+
+<p>Its Really that simple.</p>
+  </section>
+
+  <section id = "demo" class="solunar-demo">
+    <h3 class="title">Try it:</h3><hr>
+          <div class="form">
+            <input class = "demo_form__field" id="zip-code" type="text" name="zip-code" placeholder="zipcode">
+            <button class = "demo_btn demo_btn--primary demo_btn--inside uppercase" id="geo-btn">Demo</button>
+          </div>
+          <div style = "display: none" id="solunar-results" class="solunar-results">
+            <p class = "page-section__text-content url-result">URL:  <span id="url"></span></p>
+            <p class = "page-section__text-content">Coordinates:  <span id="lat"></span> <span id="lng"></span></p>
+            <p class = "page-section__text-content">Moon Phase is <span id="moonphase"></span></p>
+            <p class = "page-section__text-content">Moon Rise at <span id="moonrise"></span></p>
+            <p class = "page-section__text-content">Moon Transit at <span id="moontransit"></span></p>
+            <p class = "page-section__text-content">Moon Set at <span id="moonset"></span></p>
+            <p class = "page-section__text-content">Sun Rise at <span id="sunrise"></span></p>
+            <p class = "page-section__text-content">Sun Transit at <span id="suntransit"></span></p>
+            <p class = "page-section__text-content">Sun Set at <span id="sunset"></span></p>
+            <p class = "page-section__text-content">Major Solunar Periods at <span id="major1start"></span> - <span id="major1stop"></span>
+            and <span id="major2start"></span> - <span id="major2stop"></span></p>
+            <p class = "page-section__text-content">Minor Solunar Periods at <span id="minor1start"></span> - <span id="minor1stop"></span>
+            and <span id="minor2start"></span> - <span id="minor2stop"></span></p>
+          </div>
+  </section>
+
+  <section id = "about" class="about">
+    <h3 class="title">Solunar Theory:</h3>
+    <hr>
+    <p>This api calculates solunar times. There is a hypothesis that the times animals and fish are most active and feeding can be predicted based on factors such as sunrise/sunset, moonrise/moonset, moon up/moon down and moonphase. Fisherman and hunters use this data to determine the best days and times of day to catch fish or hunt game.</p>
+
+  </section>
+
+  <!-- <section class="contact">
+    <h3 class="title">Learn more</h3>
+    <p>Want to keep in touch as new features are added?</p>
+    <hr>
+    <form class="" action="index.html" method="post">
+      <input type="email" placeholder="Email" >
+      <a href="#" class="btn">Subscribe now</a>
+
+    </form>
+
+  </section> -->
+
+  <footer>
+    <p>Images courtesy of <a href="http://unsplash.com">unsplash</a>.</p>
+    <p>The solunar api and this website were created by <a href="https://dugb.net">Doug</a></p>
+    <p>Need a developer?  <a href="https://dugb.net"> Doug</a> is looking for a job.</p>
+    <ul>
+      <li><a href="https://github.com/dugb"><i class="fab fa-github fa-2x"></i></a></li>
+
+    </ul>
+  </footer>
+
+        <script src="assets/scripts/jquery-3.3.1.min.js"></script>
+        <script src="assets/scripts/solunar.js"></script>
+
+</body>
+</html>
