@@ -9,18 +9,23 @@
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
   <link rel="stylesheet" href="assets/css/styles.css">
-  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3904369-8"></script>
   <script>
-    (adsbygoogle = window.adsbygoogle || []).push({
-      google_ad_client: "ca-pub-1180969992821055",
-      enable_page_level_ads: true
-    });
-  </script>
+  window.dataLayer = window.dataLayer || [];
+function gtag() {
+	dataLayer.push(arguments);
+}
+gtag('js', new Date());
+gtag('config', 'UA-3904369-8');
+</script>
+
 </head>
 <body>
   <header>
     <h2><a href="#">Solunar API</a></h2>
     <nav>
+      <li><a href="#latest">Latest News</a></li>
       <li><a href="#usage">Usage</a></li>
       <li><a href="#about">About</a></li>
       <li><a target="_blank" href="https://dugb.net">Contact</a></li>
@@ -36,6 +41,24 @@
       <h3>Get Solunar Tables For Your App Or On Your Website</h3>
       <a href="#usage" class="btn">Get Started</a>
     </div>
+  </section>
+
+  <section id = "latest" class="latest-news">
+    <h3 class="title">Latest News:</h3>
+    <p>Server Upgrades and more!</p>
+    <hr>
+
+    <p>12 July 2018</p>
+    <ul>
+      <li>The main server got a hardware upgrade.  More RAM!</li>
+      <li>The source code for the Astro-Algorithms has been getting revamped.</li>
+      <li>Server side caching with redis is implemented on the testing server cluster.</li>
+      <li>The API has been containerized with docker and running multiple containers with load balancing, on the testing server cluster.</li>
+      <li>The testing API will be open to the public soon.</li>
+      <li>Due to the increased costs and development time I've been putting into the project, I am looking into a pricing model.</li>
+      <li>The Solunar.org API will always have a free, but limited option</li>
+    <ul>
+
   </section>
 
   <section id = "usage" class="usage-documentation">
